@@ -43,13 +43,13 @@ vsechnyUrovne()
 
 const max3 = () => {
 if (urovenHTML >= urovenCSS && urovenHTML >= urovenJS) {
-    largest = urovenHTML
+    return urovenHTML
 } else if (urovenCSS >= urovenHTML && urovenCSS >= urovenJS) {
-    largest = urovenCSS
+    return urovenCSS
 } else {
-    largest = urovenJS
+    return urovenJS
 }  
 }
 max3()
 
-document.body.innerHTML = "Nejvyšší znalosti máš v:" + max3()
+console.log("Nejvyšší znalosti máte v:" + max3())
